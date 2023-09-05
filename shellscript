@@ -1,1 +1,11 @@
+#to start the docker deamon
+sudo systemctl start docker
 
+#to build the image of reactjs
+docker build -t shankar123321/client-image -f Docker-reactJS .
+
+#to build the image of nodeJS server
+docker build -t shankar123321/server-image -f Docker-NodeJS .
+
+#docker-compose cmd in detached mode
+docker-compose up -d
